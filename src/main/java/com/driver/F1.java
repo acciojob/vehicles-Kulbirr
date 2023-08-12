@@ -26,22 +26,19 @@ public class F1 extends Car {
         }
         else if (newSpeed <= 50) {
             changeGear(1);
-            changeSpeed(newSpeed, getCurrentDirection()); // Update speed for all cases
         } else if (newSpeed <= 100) {
             changeGear(2);
-            changeSpeed(newSpeed, getCurrentDirection()); // Update speed for all cases
         } else if (newSpeed <= 150) {
             changeGear(3);
-            changeSpeed(newSpeed, getCurrentDirection()); // Update speed for all cases
         } else if (newSpeed <= 200) {
             changeGear(4);
-            changeSpeed(newSpeed, getCurrentDirection()); // Update speed for all cases
         } else if (newSpeed <= 250) {
             changeGear(5);
-            changeSpeed(newSpeed, getCurrentDirection()); // Update speed for all cases
         } else {
             changeGear(6);
-            changeSpeed(newSpeed, getCurrentDirection()); // Update speed for all cases
+        }
+        if(newSpeed > 0){
+            changeSpeed(newSpeed, getCurrentDirection());
         }
         //for all other cases, change the gear accordingly
     }
